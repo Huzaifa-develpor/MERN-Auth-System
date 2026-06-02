@@ -24,7 +24,7 @@ const Signin = () => {
   // Pehle wale form ki API hit logic
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8000/auth/web/register", signinData)
+    axios.post("https://mern-auth-system-production.up.railway.app/auth/web/register", signinData)
       .then((res) => {
         setSigninData({
           name: "",
