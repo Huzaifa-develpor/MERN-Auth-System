@@ -8,7 +8,12 @@ const cookieParser = require('cookie-parser')
 const app = express()
 
 app.use(express.json())
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://mern-auth-system-oofh.vercel.app/",
+    credentials: true,
+  })
+);
 app.use(cookieParser())
 app.use('/auth/web', routes)
 
