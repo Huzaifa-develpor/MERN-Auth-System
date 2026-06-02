@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Login from '../Components/Login'
-import Signin from '../Components/Signin'
+import Login from '../Components/LogIn'
+import Signin from '../Components/SignIn'
 import Home from '../Components/Home'
 import ProtectedRoute from './ProtectedRoute'
 const AppRouter = () => {
