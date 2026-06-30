@@ -30,7 +30,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post("https://mern-auth-system-production.up.railway.app/auth/web/login", loginData)
+    axios.post("https://mern-auth-system-production-2000.up.railway.app/auth/web/login", loginData)
       .then((res) => {
         setloginData({
           email: "",
