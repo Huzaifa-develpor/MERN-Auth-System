@@ -2,10 +2,6 @@
 
 A secure and modern authentication system built with the MERN stack. This project demonstrates industry-standard authentication practices using JSON Web Tokens (JWT), protected routes, password hashing, and role-based session management.
 
-## 🚀 Live Demo
-
-🔗 Live: https://your-live-demo-link.com
-
 ## 📂 GitHub Repository
 
 🔗 https://github.com/Huzaifa-develpor/your-repository
