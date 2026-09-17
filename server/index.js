@@ -14,7 +14,7 @@ app.use(cookieParser())
 app.use('/auth/web', routes)
 
 
-mongoose.connect(process.env.dbUrl || process.env.dburl)
+mongoose.connect(process.env.dburl)
     .then(() => {
         console.log("connected to database")
     })
