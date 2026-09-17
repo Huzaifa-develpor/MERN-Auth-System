@@ -8,17 +8,19 @@ const cookieParser = require('cookie-parser')
 const app = express()
 
 app.use(express.json())
-app.use(cors());
+app.use(cors())
 app.use(cookieParser())
+
 app.use('/auth/web', routes)
 
-mongoose.connect(process.env.dburl).then(() => {
-    console.log("connected to database")
 
-    app.listen(process.env.port, () => {
-        console.log('server is running');
+mongoose.connect(process.env.dbUrl || process.env.dburl)
+    .then(() => {
+        console.log("connected to database")
+    })
+    .catch((err) => {
+        console.error("Database connection failed:", err)
     })
 
-}).catch((err) => {
-    console.log(err)
-})
+
+module.exports = app
